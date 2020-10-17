@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <TableRow   android:layout_margin="16dp" android:gravity="center">
+        <Button android:text="Tạo lịch trình"></Button>
+        <Button android:text="Hủy lịch trình"></Button>
+        <Button android:text="Báo lạc nhóm"></Button>
+    </TableRow>
+    <TableRow android:layout_marginLeft="16dp">
+        <Button android:text="chọn"></Button>
+
+        <EditText
+            android:layout_width="109dp"
+            android:hint="địa chỉ bắt đầu"></EditText>
+    </TableRow>
+    <TableRow android:layout_marginLeft="16dp">
+        <Button android:text="chọn"></Button>
+        <EditText android:hint="địa chỉ đến"></EditText>
+    </TableRow>
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:datePickerMode="spinner"
+        android:spinnersShown="false" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:gravity="center">
+
+        <Button android:text="Back"></Button>
+
+        <Button
+            android:layout_column="2"
+            android:text="home"></Button>
+    </TableRow>
+
+</TableLayout>
